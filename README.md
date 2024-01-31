@@ -30,4 +30,10 @@ The [Python](https://www.python.org/) programming language is used for this onbo
 9. Update your README with details about the data
 10. Inspect the data visually using ***program***
 11. Install [mamba](https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html) (mamba - miniforge)
-12. Create the project environment and install the required packages. Use the provided .txt / .yml file. This can be done with the following command: *mamba env create --prefix ./env --file **file***
+12. Create the project environment and install the required packages. Create the `environment.yml` with the content below. This can be done with the following command: *mamba env create --prefix ./env --file **file***
+
+```yml
+dependencies:
+  - matplotlib=3.1
+  - scikit-image
+```
