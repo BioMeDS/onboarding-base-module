@@ -15,6 +15,7 @@ Essentially, this workflow should be applied:
         id1(Working on project) ---> id2(Push to git)
         id2 ---> id3(Update documentation)
         id3 ---> id1
+        id3 -.-> id2
 ```
 The [Python](https://www.python.org/) programming language is used for this onboarding.
 
