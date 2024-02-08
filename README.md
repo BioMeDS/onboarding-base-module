@@ -35,13 +35,13 @@ The use of the Jupyter extension in VS Code combines the versatility of both "VS
 | data     | Your data is stored here     |
 | code     | Your code is stored here     |
 | communication     | Any images/posters etc. that can be used for publications and such are stored here     |
-| results     | Your results are stored here. This included your results and end results     |
+| results     | Your results are stored here. This includes your results and end results     |
 
 #### 5. Start using git on your project
 To start using git, open your Terminal (Linux) or your Command prompt (Windows) and go to your repository. For this you can use ```cd PATH```. Then write ```git init```and hit enter. This initializes the use of git in the repository. To add files to git you have to use the command ```git add FILE``` and to commit the files that were added you have to use the command ```git commit -m "MESSAGE"```, where "MESSAGE" should be a short message about what you commited or what updates you did. If you want to check what files have been added or what changes were made you can use ```git status```. A history of commits can be found via ```git log```.
 
-#### 6. Create a README for your project and write a short introduction
-T O   D O
+#### 6. Create a README
+Create a README.txt or README.md for your project and write a short introduction. This README is used to explain what you're doing so others can understand your repository and approach to the tasks.
 
 #### 7. Download the data provided by this [realistic dataset](https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BSST700)
 T O   D O
@@ -50,15 +50,18 @@ T O   D O
 Create a file called ```.gitignore``` and input the names/paths of files and/or folders that should not be included in the git commit. This ```.gitignore``` file has to be in your repository.
 
 #### 9. Update your README with details about the data
-T O   D O
+Like mentioned in *6. Create a README* you should explain everything so others can understand it. Include information about your data. What is the data? What files are used? What does the data mean? and so on.
 
-#### 10. Inspect the data visually using ***program***
-T O   D O
+#### 10. Inspect the data visually
+Now that you handled most of the organizational stuff of this base module you can finally have a look at the downloaded data. Use some image files and have a look at the in a standard image viewer on your Computer.
 
-#### 11. Install [mamba](https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html) (mamba - miniforge)
-T O   D O
+#### 11. Install [mamba](https://github.com/conda-forge/miniforge?tab=readme-ov-file#miniforge3)
+To start using python to analyse and visualize the data, you must first install Mamba. Mamba is a package manager that enables easy installation and handling of needed packages. Use this [link](https://github.com/conda-forge/miniforge?tab=readme-ov-file#miniforge3) to install Miniforge3.
 
-#### 12. Create the project environment and install the required packages. Create the `environment.yml` with the content below as reference.
+#### 12. Create the project environment and install the required packages. 
+Once Miniforge3 (Mamba) is installed you have to create a project environment. To do this you have to type ```mamba create -n NAME python=3.???```. Create a `environment.yml` file with the content below as reference.
+
+TO DO
 
 ```yml
 dependencies:
