@@ -44,7 +44,18 @@ To start using git, open your Terminal (Linux) or your Command prompt (Windows) 
 Create a README.txt or README.md for your project and write a short introduction. This README is used to explain what you're doing so others can understand your repository and approach to the tasks.
 
 #### 7. Download the data provided by this [realistic dataset](https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BSST700)
-T O   D O
+To download all of the files, you have to manually download each file on its own if you use Windows. On Linux you can download all files together using FTP. The dataset consists of the following files:
+
+| File | Explanation |
+| ---- | ----------- |
+| channel_infos.csv | Information about what marker was used for what channel |
+| taglist.csv | List of tags and their corresponding base codes |
+| tile_names.csv | List of all tile names |
+| selected_tiles_map.png | Overview of all tiles with used tiles highlighted in red |
+| selected-tiles.zip | This is the data. Files contain their tile info as well as their run (c) and the marker that was used |
+| decoding.zip | ??? |
+
+TO DO 
 
 #### 8. Use ```.gitignore``` on the downloaded data to prevent it from being committed to git
 Create a file called ```.gitignore``` and input the names/paths of files and/or folders that should not be included in the git commit. This ```.gitignore``` file has to be in your repository.
