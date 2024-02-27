@@ -86,4 +86,4 @@ With the command ```mamba env create -f environment.yml``` you can create your n
 #### 13. Create a figure that incorporates all runs (c1 - c4) of one tile as subplots.
 Create a grid from the various runs and channels for a specific tile. Example for tile X10 Y2:
 
-***Image***
+![Example grid of tile X10 Y2](https://github.com/BioMeDS/onboarding-base-module/blob/main/example_x10y2_grid.png)
