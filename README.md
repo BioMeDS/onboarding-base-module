@@ -70,7 +70,7 @@ Now that you handled most of the organizational stuff of this base module you ca
 To start using python to analyse and visualize the data, you must first install Mamba. Mamba is a package manager that enables easy installation and handling of needed packages. Use this [link](https://github.com/conda-forge/miniforge?tab=readme-ov-file#miniforge3) to install Miniforge3.
 
 #### 12. Create the project environment and install the required packages. 
-Once Miniforge3 (Mamba) is installed you have to create a project environment. To do this you have to type ```mamba create -n NAME python=3.???```. Create a `environment.yml` file with the content below as reference.
+Once Miniforge3 (Mamba) is installed you have to create a project environment. Create a `environment.yml` file first with the content below as reference.
 
 TO DO
 
@@ -79,7 +79,11 @@ dependencies:
   - numpy
   - pandas=2.0.1
 ```
-For this base module you need the packages ```matplotlib``` in version 3.1 and ```scikit-image```.
+For this base module you need python in version 3.??? as well as the packages ```matplotlib``` in version 3.1, ```scikit-image``` and ```jupyterlab```.
 
-#### 13. Create a figure that incorporates all runs (c1 - c4) as subplots.
-T O   D O
+With the command ```mamba env create -f environment.yml``` you can create your new mamba environment based on your .yml file.
+
+#### 13. Create a figure that incorporates all runs (c1 - c4) of one tile as subplots.
+Create a grid from the various runs and channels for a specific tile. Example for tile X10 Y2:
+
+![Image](D:\PythonProjects\Test\results\x10y2_grid.png)
