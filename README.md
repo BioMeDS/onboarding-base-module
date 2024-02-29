@@ -94,7 +94,7 @@ First you have to unpack the selected-tiles.zip. Then import the needed Packages
 </details>
 
 ##### 13.2. Plot one of the images
-Based on the list you created in 13.1, plot the following file using matplotlib.pyplot: out_opt_flow_registered_X10_Y10_c01_DAPI.tif
+Based on the list you created in 13.1, plot the following file using matplotlib.pyplot: ```out_opt_flow_registered_X10_Y10_c01_DAPI.tif```
 <details>
     <summary>Help</summary>
 If you use GLOBVARIABLE.index("\\PATH\\TO\\FILE\\out_opt_flow_registered_X10_Y10_c01_DAPI.tif") you will get the index of the file. Now use this index to output it from the file list that was also created by you in 13.1. The output should be an array of many numbers representing the respective image pixels. If you now take the list with the index for the desired image and plot it using matplotlib.pyplot.imshow(LIST[INDEX]), the file will now be displayed as an image.
