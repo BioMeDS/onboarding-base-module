@@ -13,7 +13,7 @@ Essentially, this workflow should be applied:
 ```mermaid
     graph LR
         id1(Working on project) ---> id2(Push to git)
-        id2 ---> id3(Update documentation)
+        id2 ---> id3(Update documentation\n+ Comments in your code)
         id3 ---> id1
         id3 -.-> id2
 ```
@@ -44,18 +44,18 @@ To start using git, open your Terminal (Linux) or your Command prompt (Windows) 
 Create a README.txt or README.md for your project and write a short introduction. This README is used to explain what you're doing so others can understand your repository and approach to the tasks.
 
 #### 7. Download the data provided by this [realistic dataset](https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BSST700)
+EXPLANATION OF DATASET (TO DO)
+
 To download all of the files, you have to manually download each file on its own if you use Windows. On Linux you can download all files together using FTP. The dataset consists of the following files:
 
 | File | Explanation |
 | ---- | ----------- |
-| channel_infos.csv | Information about what marker was used for what channel |
-| taglist.csv | List of tags and their corresponding base codes |
-| tile_names.csv | List of all tile names |
-| selected_tiles_map.png | Overview of all tiles with used tiles highlighted in red |
-| selected-tiles.zip | This is the data. Files contain their tile info as well as their run (c) and the marker that was used |
-| decoding.zip | ??? |
-
-TO DO 
+| channel_infos.csv | Relates each image channel to its corresponding code |
+| taglist.csv | Codebook of barcodes used in the experiment |
+| tile_names.csv | Names (coordinates) of selected tiles |
+| selected_tiles_map.png | Map of selected tiles |
+| selected-tiles.zip | Registered tif images of selected tiles |
+| decoding.zip | Decoding of the selected ISS tiles via different methods |
 
 #### 8. Use ```.gitignore``` on the downloaded data to prevent it from being committed to git
 Create a file called ```.gitignore``` and input the names/paths of files and/or folders that should not be included in the git commit. This ```.gitignore``` file has to be in your repository.
@@ -90,14 +90,14 @@ When creating a ```.ipynb``` file in VS Code it wants you to select a kernel. He
 Load all the files in *selected-tiles* into a list, so you can access them if needed.
 <details>
     <summary>Help</summary>
-    TO DO
+First you have to unpack the selected-tiles.zip. Then import the needed Packages (skimage, matplotlib.pyplot, glob). You can use glob.glob() to save all the files in the selected-tiles folder in a variable. You can then iterate over all the files in the glob variable and use scikit-image (ski.io.imread()) to read in the files and save them in a list. 
 </details>
 
 ##### 13.2. Plot one of the images
-TO DO
+Based on the list you created in 13.1, plot the following file using matplotlib.pyplot: out_opt_flow_registered_X10_Y10_c01_DAPI.tif
 <details>
     <summary>Help</summary>
-    TO DO
+If you use GLOBVARIABLE.index("\\PATH\\TO\\FILE\\out_opt_flow_registered_X10_Y10_c01_DAPI.tif") you will get the index of the file. Now use this index to output it from the file list that was also created by you in 13.1. The output should be an array of many numbers representing the respective image pixels. If you now take the list with the index for the desired image and plot it using matplotlib.pyplot.imshow(LIST[INDEX]), the file will now be displayed as an image.
 </details>
 
 ##### 13.3. Plot a grid of corresponding images
