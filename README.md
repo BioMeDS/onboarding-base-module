@@ -77,7 +77,7 @@ dependencies:
   - numpy
   - pandas=2.0.1
 ```
-For this base module you need the latest version of python as well as the packages ```matplotlib``` and ```scikit-image```.
+For this base module you need the latest version of python as well as the packages ```matplotlib```, ```scikit-image``` and ```ipykernel```.
 
 With the command ```mamba env create -f environment.yml --name NAME``` you can create your new mamba environment based on your .yml file.
 
