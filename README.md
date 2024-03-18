@@ -17,10 +17,10 @@ Essentially, this workflow should be applied:
         id3 ---> id1
         id3 -.-> id2
 ```
-The [Python](https://www.python.org/) programming language is used for this onboarding.
+The [Python](https://www.python.org/) programming language is used for this onboarding. The basics of Python are conveyed in this [course](https://github.com/SchardtS/PythonLectures) (provided by Prof. Dr. Sabine Fischer).
 
 ### Tasks
-#### 1. Read through the instruction repository and understand the task
+#### 1. Read through this base module and understand the task
 The task of this base module is to create a figure based on a realistic dataset. To do this, important programs etc. must first be installed and an environment created for the project. Another goal is to learn best practices and get a good workflow.
 
 #### 2. Install the IDE [Visual Studio Code](https://code.visualstudio.com/)
@@ -29,7 +29,9 @@ It is advisable to use an IDE, as these have useful features such as debugging o
 #### 3. Install the VS Code Extension "Jupyter" for Jupyer Notebook support
 The use of the Jupyter extension in VS Code combines the versatility of both "VS Code" and "Jupyter Notebook". 
 
-#### 4. Create a repository based on the basic structure provided
+#### 4. Create a repository
+On your computer, create a folder for this base module. In this folder, create the subfolders listed in the following table.
+
 | Folder | Explanation |
 | -------- | -------- |
 | data     | Your data is stored here     |
@@ -38,13 +40,13 @@ The use of the Jupyter extension in VS Code combines the versatility of both "VS
 | results     | Your results are stored here. This includes your results and end results     |
 
 #### 5. Start using git on your project
-To start using git, open your Terminal (Linux) or your Command prompt (Windows) and go to your repository. For this you can use ```cd PATH```. Then write ```git init```and hit enter. This initializes the use of git in the repository. To add files to git you have to use the command ```git add FILE``` and to commit the files that were added you have to use the command ```git commit -m "MESSAGE"```, where "MESSAGE" should be a short message about what you commited or what updates you did. If you want to check what files have been added or what changes were made you can use ```git status```. A history of commits can be found via ```git log```. A guide about git that was created by GitHub can be found [here](https://github.com/git-guides).
+Version control of your directory and your code is possible with the help of git. VS Code has built-in version control and its functionality is explained in this [guide](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git). However, before version control with git is possible, it must first be installed if you are using Windows. Click [here](https://git-scm.com/downloads) to go to the git download page.
 
 #### 6. Create a README
-Create a README.txt or README.md for your project and write a short introduction. This README is used to explain what you're doing so others can understand your repository and approach to the tasks.
+Create a fille called README.md or README.txt for your project and write a short introduction. This README is used to explain what you're doing so others can understand your repository and approach to the tasks.
 
 #### 7. Download the data provided by this [realistic dataset](https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BSST700)
-EXPLANATION OF DATASET (TO DO)
+The dataset consists of 171 selected tiles from the right hemisphere of a mouse brain. Each tile has the dimensions 1000x1000 pixels and contains 6 imaging channels (nuclei channel, anchor channel and 4 coding channels) in which different markers were used. For each tile 4 sequencing rounds were performed.
 
 To download all of the files, you have to manually download each file on its own if you use Windows. On Linux you can download all files together using FTP. The dataset consists of the following files:
 
@@ -56,6 +58,8 @@ To download all of the files, you have to manually download each file on its own
 | selected_tiles_map.png | Map of selected tiles |
 | selected-tiles.zip | Registered tif images of selected tiles |
 | decoding.zip | Decoding of the selected ISS tiles via different methods |
+
+The files can then be unpacked. This should be done for the selected tiles in particular.
 
 #### 8. Use ```.gitignore``` on the downloaded data to prevent it from being committed to git
 Create a file called ```.gitignore``` and input the names/paths of files and/or folders that should not be included in the git commit. This ```.gitignore``` file has to be in your repository.
@@ -79,7 +83,7 @@ dependencies:
 ```
 For this base module you need the latest version of python as well as the packages ```matplotlib```, ```scikit-image``` and ```ipykernel```.
 
-With the command ```mamba env create -f environment.yml --name NAME``` you can create your new mamba environment based on your .yml file.
+With the command ```mamba env create -f environment.yml --name NAME``` you can create your new mamba environment based on your .yml file. If you want to install each package individually, this works with the command ```mamba install PACKAGE```. You can also install several packages at once by including them all in the ```mamba install``` command (separated by spaces). For example: ```mamba install numpy pandas=2.0.1```. With the command ```mamba remove PACKAGE``` packages can be removed.
 
 ---
 
