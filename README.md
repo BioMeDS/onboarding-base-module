@@ -70,8 +70,8 @@ Like mentioned in *6. Create a README* you should explain everything so others c
 #### 10. Inspect the data visually
 Now that you handled most of the organizational stuff of this base module you can finally have a look at the downloaded data. Use some image files and have a look at the in a standard image viewer on your Computer.
 
-#### 11. Install [mamba](https://github.com/conda-forge/miniforge?tab=readme-ov-file#miniforge3)
-To start using python to analyse and visualize the data, you must first install Mamba. Mamba is a package manager that enables easy installation and handling of needed packages. Use this [link](https://github.com/conda-forge/miniforge?tab=readme-ov-file#miniforge3) to install Miniforge3.
+#### 11. Install Mamba
+To start using python to analyse and visualize the data, you must first install Mamba. Mamba is a package manager that enables easy installation and handling of needed packages. Use this [link](https://github.com/conda-forge/miniforge?tab=readme-ov-file#miniforge3) to install Miniforge3 (Mamba).
 
 #### 12. Create the project environment and install the required packages. 
 Once Miniforge3 (Mamba) is installed you have to create a project environment. Create a `environment.yml` file first with the content below as reference.
