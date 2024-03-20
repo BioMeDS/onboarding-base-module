@@ -1,5 +1,8 @@
 # onboarding-base-module
 
+> [!CAUTION]  
+> This onboarding base module is still a work in progress, so if you notice any errors or have any suggestions, please report them [here](https://github.com/BioMeDS/onboarding-base-module/issues) via a Github issue ([Guide](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue)).
+
 A certain organization and structure is important in order to work cleanly. To help with this, there is this onboarding, which is intended to convey the following basic concepts:
 
 - **I**ntegrated **D**evelopment **E**nvironment (IDE)
@@ -18,6 +21,9 @@ Essentially, this workflow should be applied:
         id3 -.-> id2
 ```
 The [Python](https://www.python.org/) programming language is used for this onboarding. The basics of Python are conveyed in this [course](https://github.com/SchardtS/PythonLectures) (provided by Prof. Dr. Sabine Fischer).
+
+> [!TIP]
+> If you encounter problems during the course of the base module and cannot find any help on the pages already linked, it is always wise to google your problem or look at sites such as [Stackoverflow](https://stackoverflow.com/) or [Reddit](https://www.reddit.com/). Alternatively, you can also ask [ChatGPT](chat.openai.com). If you are still having trouble finding a solution to your problem after searching the internet, ask your supervisor.
 
 ### Tasks
 #### 1. Read through this base module and understand the task
@@ -84,6 +90,9 @@ dependencies:
 For this base module you need the latest version of python as well as the packages ```matplotlib```, ```scikit-image``` and ```ipykernel```.
 
 With the command ```mamba env create -f environment.yml --name NAME``` you can create your new mamba environment based on your .yml file. If you want to install each package individually, this works with the command ```mamba install PACKAGE```. You can also install several packages at once by including them all in the ```mamba install``` command (separated by spaces). For example: ```mamba install numpy pandas=2.0.1```. With the command ```mamba remove PACKAGE``` packages can be removed.
+
+> [!NOTE]
+> Don't forget the workflow mentioned at the top of the base module!
 
 ---
 
