@@ -89,7 +89,7 @@ dependencies:
 ```
 For this base module you need the latest version of python as well as the packages ```matplotlib```, ```scikit-image``` and ```ipykernel```.
 
-With the command ```mamba env create -f environment.yml --name NAME``` you can create your new mamba environment based on your .yml file. If you want to install each package individually, this works with the command ```mamba install PACKAGE```. You can also install several packages at once by including them all in the ```mamba install``` command (separated by spaces). For example: ```mamba install numpy pandas=2.0.1```. With the command ```mamba remove PACKAGE``` packages can be removed.
+With the command ```mamba env create -f environment.yml --name NAME``` (```NAME``` = How you want to call your environment) you can create your new mamba environment based on your .yml file. If you want to install each package individually, this works with the command ```mamba install PACKAGE``` (```PACKAGE``` = The name of the package). You can also install several packages at once by including them all in the ```mamba install``` command (separated by spaces). For example: ```mamba install numpy pandas=2.0.1```. With the command ```mamba remove PACKAGE``` packages can be removed.
 
 > [!NOTE]
 > Don't forget the workflow mentioned at the top of the base module!
@@ -97,7 +97,9 @@ With the command ```mamba env create -f environment.yml --name NAME``` you can c
 ---
 
 #### 13. Create a figure that incorporates all runs (c1 - c4) of one tile as subplots.
-When creating a ```.ipynb``` file in VS Code it wants you to select a kernel. Here you choose the environment you created in the previous task. As this task is about image analysis, you can read more about that [here](haesleinhuepf.github.io/BioImageAnalysisNotebooks). Write your code as a function that can be stored in a ```.py``` file and can be used to analyse any given tile of the data.
+Create two files: ```Analysis.ipynb``` and ```Functions.py```. When creating the ```.ipynb``` file in VS Code it wants you to select a kernel. Here you choose the environment you created in the previous task. The ```.ipynb``` file is where you write your code. Write your code as a function that can be used to analyse any given tile of the data. You can then save the function in the ```.py``` file so that you can also use it in other ```.ipynb``` files.
+
+As this task is about image analysis, you can read more about that [here](haesleinhuepf.github.io/BioImageAnalysisNotebooks).
 
 ##### 13.1. Load the files
 Load all the files in *selected-tiles* into a list, so you can access them if needed.
