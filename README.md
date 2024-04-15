@@ -45,6 +45,8 @@ On your computer, create a folder for this base module. In this folder, create t
 | communication     | Any images/posters etc. that can be used for publications and such are stored here     |
 | results     | Your results are stored here. This includes your results and end results     |
 
+This repository will be synchronized with a remote repository (e.g. on GitHub), later on.
+
 #### 5. Start using git on your project
 Version control of your directory and your code is possible with the help of git. VS Code has built-in version control and its functionality is explained in this [guide](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git). However, before version control with git is possible, it must first be installed if you are using Windows. Click [here](https://git-scm.com/downloads) to go to the git download page.
 
