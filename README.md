@@ -103,18 +103,18 @@ Create two files: ```Analysis.ipynb``` and ```Functions.py```. When creating the
 
 As this task is about image analysis, you can read more about that [here](haesleinhuepf.github.io/BioImageAnalysisNotebooks).
 
-##### 13.1. Load the files
+##### 13.1. Plot one image
+Plot the following file using matplotlib.pyplot: ```out_opt_flow_registered_X10_Y10_c01_DAPI.tif```
+<details>
+    <summary>Help</summary>
+Text
+</details>
+
+##### 13.2. Create a list of files
 Load all the files in *selected-tiles* into a list, so you can access them if needed.
 <details>
     <summary>Help</summary>
 First you have to unpack the selected-tiles.zip. Then import the needed Packages (skimage, matplotlib.pyplot, glob). You can use glob.glob() to save all the files in the selected-tiles folder in a variable. You can then iterate over all the files in the glob variable and use scikit-image (ski.io.imread()) to read in the files and save them in a list. 
-</details>
-
-##### 13.2. Plot one of the images
-Based on the list you created in 13.1, plot the following file using matplotlib.pyplot: ```out_opt_flow_registered_X10_Y10_c01_DAPI.tif```
-<details>
-    <summary>Help</summary>
-If you use GLOBVARIABLE.index("\\PATH\\TO\\FILE\\out_opt_flow_registered_X10_Y10_c01_DAPI.tif") you will get the index of the file. Now use this index to output it from the file list that was also created by you in 13.1. The output should be an array of many numbers representing the respective image pixels. If you now take the list with the index for the desired image and plot it using matplotlib.pyplot.imshow(LIST[INDEX]), the file will now be displayed as an image.
 </details>
 
 ##### 13.3. Plot a grid of corresponding images
