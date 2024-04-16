@@ -107,18 +107,26 @@ As this task is about image analysis, you can read more about that [here](haesle
 Plot the following file using matplotlib.pyplot: ```out_opt_flow_registered_X10_Y10_c01_DAPI.tif```
 <details>
     <summary>Help</summary>
-Text
+First you have to unpack the selected-tiles.zip. Then import the needed packages (skimage, matplotlib.pyplot, glob). Now you can plot one of the images. To do this, the image must first be saved in a variable using ski.io.imread("PATH/out_opt_flow_registered_X10_Y10_c01_DAPI.tif"). This variable can then be plotted with matplotlib.pyplot. An alternative to plotting with matplotlib.pyplot would be to display the image directly with ski.io.imshow("PATH/out_opt_flow_registered_X10_Y10_c01_DAPI.tif") instead of saving the image in a variable.
 </details>
 
 ##### 13.2. Create a list of files
-Load all the files in *selected-tiles* into a list, so you can access them if needed.
+Load all X10_Y10 images into a list.
 <details>
     <summary>Help</summary>
-First you have to unpack the selected-tiles.zip. Then import the needed Packages (skimage, matplotlib.pyplot, glob). You can use glob.glob() to save all the files in the selected-tiles folder in a variable. You can then iterate over all the files in the glob variable and use scikit-image (ski.io.imread()) to read in the files and save them in a list. 
+You can use glob.glob() to save all needed files in the selected-tiles folder in a variable. To import all X_10_Y10 images and only them you have to tell glob which files it has to save. You do this with glob.glob("PATH/out_opt_flow_registered_X10_Y10_*.tif"). This nomenclature with * tells glob, that it should look for all files that have the same name (before *). You can then iterate over all the files in the glob variable and use scikit-image (ski.io.imread()) to read in the files and save them in a list. 
 </details>
 
-##### 13.3. Plot a grid of corresponding images
-Create a grid from the various runs and channels for a specific tile.
+##### 13.3. Plot a grid of images
+Create a grid of all the X10_Y10 images so that they are arranged as follows:
+
+| | | | | | |
+| -------- | -------- | -------- | -------- | -------- | -------- |
+| *_c01_Alexa_488.tif | *_c01_Alexa_568.tif | *_c01_Alexa_647.tif | *_c01_Atto_425.tif | *_c01_Atto_490LS.tif | *_c01_DAPI.tif |
+| *_c02_Alexa_488.tif | *_c02_Alexa_568.tif | *_c02_Alexa_647.tif | *_c02_Atto_425.tif | *_c02_Atto_490LS.tif | *_c02_DAPI.tif |
+| *_c03_Alexa_488.tif | *_c03_Alexa_568.tif | *_c03_Alexa_647.tif | *_c03_Atto_425.tif | *_c03_Atto_490LS.tif | *_c03_DAPI.tif |
+| *_c04_Alexa_488.tif | *_c04_Alexa_568.tif | *_c04_Alexa_647.tif | *_c04_Atto_425.tif | *_c04_Atto_490LS.tif | *_c04_DAPI.tif |
+
 <details>
     <summary>Help</summary>
     TO DO
@@ -126,4 +134,4 @@ Create a grid from the various runs and channels for a specific tile.
 
 Example for tile X10 Y2:
 
-![Example grid of tile X10 Y2](https://github.com/BioMeDS/onboarding-base-module/blob/main/example_x10y2_grid.png)
+![Example grid of tile X10 Y2](https://github.com/BioMeDS/onboarding-base-module/blob/main/example_13_3.png)
