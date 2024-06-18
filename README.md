@@ -17,11 +17,11 @@ A certain organization and structure is important in order to work cleanly. To h
 Essentially, this workflow should be applied:
 
 ```mermaid
-    graph LR
-        id1(Working on project) ---> id2(Push to git)
-        id2 ---> id3(Update documentation\n+ Comments in your code)
-        id3 ---> id1
-        id3 -.-> id2
+    graph LR;
+        id1(Work on project) ---> id2(Commit to git)
+        id2 ---> id3(Update documentation)
+        id3 ---> id4(Commit to git)
+        id4 ---> id1
 ```
 The [Python](https://www.python.org/) programming language is used for this onboarding. The basics of Python are conveyed in this [course](https://github.com/SchardtS/PythonLectures) (provided by Prof. Dr. Sabine Fischer).
 
