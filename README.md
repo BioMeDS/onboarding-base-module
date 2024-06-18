@@ -104,7 +104,7 @@ With the command ```mamba env create -f environment.yml --name NAME``` (```NAME`
 #### 13. Create a figure that incorporates all runs (c1 - c4) of one tile as subplots.
 Create two files: ```Analysis.ipynb``` and ```Functions.py```. When creating the ```.ipynb``` file in VS Code it wants you to select a kernel. Here you choose the environment you created in the previous task. The ```.ipynb``` file is where you write your code. Write your code as a function that can be used to analyse any given tile of the data. You can then save the function in the ```.py``` file so that you can also use it in other ```.ipynb``` files.
 
-As this task is about image analysis, you can read more about that [here](haesleinhuepf.github.io/BioImageAnalysisNotebooks).
+As this task is about image analysis, you can read more about that [here](https://haesleinhuepf.github.io/BioImageAnalysisNotebooks/intro.html).
 
 ##### 13.1. Plot one image
 Plot the following file using matplotlib.pyplot: ```out_opt_flow_registered_X10_Y10_c01_DAPI.tif```
