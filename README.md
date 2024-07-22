@@ -8,11 +8,11 @@
 
 A certain organization and structure is important in order to work cleanly. To help with this, there is this onboarding, which is intended to convey the following basic concepts:
 
-- **I**ntegrated **D**evelopment **E**nvironment (IDE)
-- Project directory structure (group specific)
-- Version control with [git](https://git-scm.com/)
-- Documentation
-- Code environments
+- Using an **I**ntegrated **D**evelopment **E**nvironment (IDE, [Visual Studio Code](https://code.visualstudio.com/))
+- Organizing projects in a standard directory structure (group specific)
+- Keeping track of your work with version control ([git](https://git-scm.com/))
+- Documentation of your work (README files and literated programming ([jupyter](https://jupyter.org/)))
+- Creating project specific code environments ([mamba](https://mamba.readthedocs.io/en/latest/))
 
 Essentially, this workflow should be applied:
 
