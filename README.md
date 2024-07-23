@@ -6,15 +6,16 @@
 > [!CAUTION]  
 > This onboarding base module is still a work in progress, so if you notice any errors or have any suggestions, please report them [here](https://github.com/BioMeDS/onboarding-base-module/issues) via a Github issue ([Guide](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue)).
 
-A certain organization and structure is important in order to work cleanly. To help with this, there is this onboarding, which is intended to convey the following basic concepts:
+In bioinformatic projects, beside the work on the subject, a certain organization and structure is important in order to make sure that the work is correct, reproducible, and reusable. This onboarding material guides you through a realistic project. You will analyse an in-situ sequencing dataset using the python programming language, while using tools that help following these basic principles:
 
-- Using an **I**ntegrated **D**evelopment **E**nvironment (IDE, [Visual Studio Code](https://code.visualstudio.com/))
 - Organizing projects in a standard directory structure (group specific)
+- Documentation of your work (README files and literate programming ([jupyter](https://jupyter.org/)))
 - Keeping track of your work with version control ([git](https://git-scm.com/))
-- Documentation of your work (README files and literated programming ([jupyter](https://jupyter.org/)))
+- Using an **I**ntegrated **D**evelopment **E**nvironment (IDE, [Visual Studio Code](https://code.visualstudio.com/))
 - Creating project specific code environments ([mamba](https://mamba.readthedocs.io/en/latest/))
 
-Essentially, this workflow should be applied:
+The general workflow consists of alternating steps of work on the project (mostly writing and executing code) and documentation.
+After each logical step, the progress is committed to version control.
 
 ```mermaid
     graph LR;
