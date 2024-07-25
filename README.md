@@ -27,16 +27,24 @@ After each logical step, the progress is committed to version control.
 The [Python](https://www.python.org/) programming language is used for this onboarding. The basics of Python are conveyed in this [course](https://github.com/SchardtS/PythonLectures) (provided by Prof. Dr. Sabine Fischer).
 
 > [!TIP]
-> If you encounter problems during the course of the base module and cannot find any help on the pages already linked, it is always wise to google your problem or look at sites such as [Stackoverflow](https://stackoverflow.com/) or [Reddit](https://www.reddit.com/). Alternatively, you can also ask [ChatGPT](chat.openai.com). If you are still having trouble finding a solution to your problem after searching the internet, ask your supervisor.
+> If you encounter problems and cannot find any help on the linked pages, it is always wise to google your problem or look at sites such as [Stackoverflow](https://stackoverflow.com/) or [Reddit](https://www.reddit.com/). You can also try asking [ChatGPT](chat.openai.com). If you still have trouble finding a solution to your problem or if you don't understand the solution you found ask your supervisor.
+
+### Biological background
+
+The final goal of the analysis is to determine the spatial localization of transcripts from 50 genes within the mouse brain. 
+For this purpose, a published in-situ sequencing (ISS) dataset is used, that utilizes barcodes with four rounds of sequencing.
 
 ### Tasks
-#### 1. Read through this base module and understand the task
-The task of this base module is to create a figure based on a realistic dataset. To do this, important programs etc. must first be installed and an environment created for the project. Another goal is to learn best practices and get a good workflow.
+
+#### 1. Read through the steps of the base module and understand your tasks
+
+The overall task, determining spatial localization of transcripts, is broken down into sub-tasks.
 
 #### 2. Install the IDE [Visual Studio Code](https://code.visualstudio.com/)
+
 It is advisable to use an IDE, as these have useful features such as debugging or autocompletion in the editor as well as version control. They can also indicate potential errors in the code. Things like this are especially useful when you are just starting out with programming. More information about IDEs can be found in the [CCTB Wiki](http://10.87.174.31/mediawiki/index.php/Beginner%27s_Guide_to_Programming#Integrated_Developer_Environments). For this onboarding the use of the IDE "Visual Studio Code" (VS Code) is recommended. A short tutorial about the download and installation can also be found in the [CCTB Wiki](http://10.87.174.31/mediawiki/index.php/Beginner%27s_Guide_to_Programming#Download_.26_Installation_2).
 
-#### 3. Install the VS Code Extension "Jupyter" for Jupyer Notebook support
+#### 3. Install the VS Code Extension "Jupyter" for Jupyter Notebook support
 The use of the Jupyter extension in VS Code combines the versatility of both "VS Code" and "Jupyter Notebook". 
 
 #### 4. Create a repository
