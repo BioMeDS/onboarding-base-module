@@ -143,12 +143,14 @@ Create a grid of all the X10_Y10 images so that they are arranged as follows:
     <summary>Help</summary>
     To do this, you need to use matplotlib.pyplot.subplots() and use a for loop to iterate over the list of images you created in 13.2. The example image was plottet using the following code (ignoring the names above the tiles):
 
-    fig, axs = plt.subplots(4, 6, figsize=(25, 15))
-    for i, ax in enumerate(axs.flatten()):
-        ax.imshow(image_array[i])
-    plt.show()
+```python
+fig, axs = plt.subplots(4, 6, figsize=(25, 15))
+for i, ax in enumerate(axs.flatten()):
+    ax.imshow(image_array[i])
+plt.show()
+```
 
-Where image_array[] is a list of image files that was created using ski.io.imread().
+Where `image_array[]` is a list of image files that was created using ski.io.imread().
     
 </details>
 
