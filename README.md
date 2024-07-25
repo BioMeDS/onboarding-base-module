@@ -155,3 +155,23 @@ Where image_array[] is a list of image files that was created using ski.io.imrea
 Example for tile X10 Y2:
 
 ![Example grid of tile X10 Y2](https://github.com/BioMeDS/onboarding-base-module/blob/main/x10y2_grid.png)
+
+#### 14. Count the number of nuclei in each field of view (fov)
+
+##### 14.1 Develop method on a single fov
+
+Write a jupyter notebook to explore a single field of view.
+- Which channel(s) is/are most promising for nucleus segmentation?
+- Which methods can you use, to distinguish between nucleus and the rest?
+- How can you devide the nuclei into separate instances?
+- Which problems occur, how can they be addressed?
+
+Beside the nucleus count, also create a diagnostic figure, that helps a human to see, whether your method worked or failed.
+When you have a method that works well on your selected fov, try it on some other fovs
+
+##### 14.2 Run your method on all fovs
+
+Write a script that applies your method to all fovs.
+Write the count per fov to a csv file and save the diagnostic plots as png files in a folder.
+
+
