@@ -33,6 +33,7 @@ The [Python](https://www.python.org/) programming language is used for this onbo
 
 The final goal of the analysis is to determine the spatial localization of transcripts from 50 genes within the mouse brain. 
 For this purpose, a published in-situ sequencing (ISS) dataset is used, that utilizes barcodes with four rounds of sequencing.
+This dataset has been used to develop a method for ISS barcode decoding, called [PoSTcode](https://www.biorxiv.org/content/10.1101/2021.10.12.464086v1.full).
 
 ### Tasks
 
