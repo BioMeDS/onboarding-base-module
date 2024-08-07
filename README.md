@@ -177,4 +177,43 @@ When you have a method that works well on your selected fov, try it on some othe
 Write a script that applies your method to all fovs.
 Write the count per fov to a csv file and save the diagnostic plots as png files in a folder.
 
+#### 15. Find and identify the transcripts
 
+Finally, we want to detect all transcripts and identify the corresponding gene.
+In order to achieve this, start again with a single field of view.
+
+##### 15.1 Spot detection
+
+First you need to identify the spots in each relevant image (all four sequencing channels and all four rounds).
+You can either identify them on each image individually or combine them (e.g. throug maximum intensity projection) and identify all spot locations at once.
+Also the mysterious 6th channel (beside dapi and the four sequencing channels) might be useful.
+You might want to apply some pre-processing steps to enhance the spots prior to detection.
+
+##### 15.2 Barcode decoding
+
+For each spot location, you need to find out which channel is active in which round (e.g. first round: A, second round G, ...).
+Possible complications are cases, where no channel or multiple channels have high intensity within the same round of sequencing.
+You may discard these spots for now, but think about ways those cases could be tracked.
+Once you have the barcode for a spot, look up the corresponding gene in the `taglist.csv`, assign unknown barcodes to "invalid".
+Save your predictions in a csv file, containing columns: `fov, x, y, barcode, gene`
+
+##### 15.3 Visualize results in napari
+
+Create a script to visualize and inspect your results by programmatically opening all images in napari:
+- create a separate layer for all four images of each sequencing channel
+- set color to (A=magenta, G=green, T=yellow, C=red) and blending to "additive"
+- add your predicted spots as a points layer
+- *(optional)* add the barcode (and decoded gene) as properties for the points, to be used as text
+- *(optional)* add dapi as another layer
+
+##### 15.4 All fovs
+
+Run spot detection and barcode decoding for all fovs, creating a single csv file with predictions for all fovs.
+Create another csv file with aggregated counts for each gene and fov: `fov, gene, count`
+
+##### 15.5 *(optional)* Compare your results with other methods
+
+The file `decoding.zip` contains spot locations and decodings, created with different methods.
+Compare your results on count basis or on individual spot basis.
+Include these reference decodings in your napari visualization.
+Looking at some predictions manually, which method do you agree most with?
