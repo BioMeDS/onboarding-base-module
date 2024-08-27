@@ -157,7 +157,7 @@ Where `image_array[]` is a list of image files that was created using ski.io.imr
 
 Example for tile X10 Y2:
 
-![Example grid of tile X10 Y2](https://github.com/BioMeDS/onboarding-base-module/blob/main/x10y2_grid.png)
+![Example grid of tile X10 Y2](x10y2_grid.png)
 
 #### 14. Count the number of nuclei in each field of view (fov)
 
