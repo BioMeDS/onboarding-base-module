@@ -151,7 +151,7 @@ for i, ax in enumerate(axs.flatten()):
 plt.show()
 ```
 
-Where `image_array[]` is a list of image files that was created using ski.io.imread().
+The variable `image_array` contains a list of image files that was created using `ski.io.imread()`.
     
 </details>
 
@@ -186,7 +186,7 @@ In order to achieve this, start again with a single field of view.
 
 First you need to identify the spots in each relevant image (all four sequencing channels and all four rounds).
 You can either identify them on each image individually or combine them (e.g. throug maximum intensity projection) and identify all spot locations at once.
-Also the mysterious 6th channel (beside dapi and the four sequencing channels) might be useful.
+Also, the mysterious 6th channel (beside dapi and the four sequencing channels) might be useful.
 You might want to apply some pre-processing steps to enhance the spots prior to detection.
 
 ##### 15.2 Barcode decoding
