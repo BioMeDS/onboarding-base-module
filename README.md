@@ -218,6 +218,9 @@ Compare your results on count basis or on individual spot basis.
 Include these reference decodings in your napari visualization.
 Looking at some predictions manually, which method do you agree most with?
 
+#### 16. Write a protocol
+
+See the [protocol guidelines](protocol_guidelines.md).
 
 ### Further resources
 - [6 Steps Towards Reproducible Research by Heidi Seibold](resources/steps-reproducible.pdf)
