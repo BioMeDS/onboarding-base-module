@@ -15,7 +15,7 @@ This is the basic high level folder structure. All these folders can and should 
 ├── documents               ← abstracts, papers, posters, grant proposals, talks, ...
 │   └── references          ← .bib file
 ├── envs                    ← compute environments (e.g. conda .yml or renv folder)
-├── .git
+├── .git                    ← the project is obviously a git repository
 ├── .gitignore              ← used to exclude temporary files and large files
 ├── LICENCE                 ← defaults: data: CC0, documents/figures: CC-BY, code: MIT
 ├── README.md               ← high level documentation, links to analyses and summary of results
@@ -59,3 +59,8 @@ If you use tools for large data handling (datalad or dvc), containers (apptainer
     └── Snakefile
 
 ```
+
+## Further reading
+
+- [Some other project structures collected by Heidi Seibold](https://heidiseibold.ck.page/posts/setting-up-a-fair-and-reproducible-project)
+- [Cookie Cutter Data Science](https://cookiecutter-data-science.drivendata.org/)
