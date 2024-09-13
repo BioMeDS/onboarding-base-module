@@ -93,6 +93,9 @@ Now that you handled most of the organizational stuff of this base module you ca
 
 #### 11. Install Mamba
 To start using python to analyse and visualize the data, you must first install Mamba. Mamba is a package manager that enables easy installation and handling of needed packages. Use this [link](https://github.com/conda-forge/miniforge?tab=readme-ov-file#miniforge3) to install Miniforge3 (Mamba).
+Make sure, to check all boxes in the "Advanced Installation Options", particularly the option "Add Miniforge3 to PATH environment variable" (even though it is listed as not recommended, see https://github.com/BioMeDS/onboarding-base-module/issues/12).
+Finalize the mamba installation by choosing "Git Bash" as your default terminal profile in VS Code and running `mamba init bash` in a Git Bash.
+After that, open a new Git Bash terminal and you are ready to use mamba.
 
 #### 12. Create the project environment and install the required packages. 
 Once Miniforge3 (Mamba) is installed you have to create a project environment. Create a `environment.yml` file first with the content below as reference.
