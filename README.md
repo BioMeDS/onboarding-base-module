@@ -71,9 +71,22 @@ Understand this folder structure and create this basic structure in your project
 ```
 
 #### 4. Start using git on your project
-Version control of your directory and your code is possible with the help of git. VS Code has built-in version control and its functionality is explained in this [guide](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git). However, before version control with git is possible, it must first be installed if you are using Windows. Click [here](https://git-scm.com/downloads) to go to the git download page.
 
-This repository will be synchronized with a remote repository (e.g. on GitHub), later on.
+Version control of your directory and your code is possible with the help of git.
+To learn more about what git is and what it can do for you, see [the Software Carpentry lesson on version control]().
+A short summary of the most important features of git is given in [the Simple Guide to Git]().
+VS Code has built-in version control and its functionality is explained in this [guide](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git).
+However, before version control with git is possible, it must first be installed if you are using Windows.
+Click [here](https://git-scm.com/downloads) to go to the git download page.
+
+After installation, you need to configure git once (on every system you use git on):
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your@email.address"
+```
+The setting `user.name` is not an username for any system or website, it is simply the name of the user.
+This repository will be synchronized with a remote repository (e.g. on [GitHub](https://github.com)), later on.
+Generally, `git` is a program for version control on your computer and completely independent of the website GitHub, which allows hosting and sharing of git repositories.
 
 #### 5. Create a README
 Create a fille called README.md or README.txt for your project and write a short introduction. This README is used to explain what you're doing so others can understand your repository and approach to the tasks.
@@ -81,7 +94,7 @@ Create a fille called README.md or README.txt for your project and write a short
 #### 6. Download the data provided by this [realistic dataset](https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BSST700)
 The dataset consists of 171 selected tiles from the right hemisphere of a mouse brain. Each tile has the dimensions 1000x1000 pixels and contains 6 imaging channels (nuclei channel, anchor channel and 4 coding channels) in which different markers were used. For each tile 4 sequencing rounds were performed.
 
-To download all of the files, you have to manually download each file on its own if you use Windows. On Linux you can download all files together using FTP. The dataset consists of the following files:
+To download all the files, you have to manually download each file on its own if you use Windows. On Linux you can download all files together using FTP. The dataset consists of the following files:
 
 | File | Explanation |
 | ---- | ----------- |
