@@ -56,28 +56,29 @@ For this onboarding the use of the IDE "Visual Studio Code" (VS Code) is recomme
 A short tutorial about the download and installation can also be found in the [CCTB Wiki](https://cctb-wiki.biologie.uni-wuerzburg.de/mediawiki/index.php/Beginner%27s_Guide_to_Programming#Download_.26_Installation_2).
 Install VS Code and go through the walkthrough "Learn the Fundamentals" on the Welcome page (`Help > Welcome`).
 
-#### 3. Install the VS Code Extension "Jupyter" for Jupyter Notebook support
-The use of the Jupyter extension in VS Code combines the versatility of both "VS Code" and "Jupyter Notebook". 
+#### 3. Create a project folder
+On your computer, create a folder for this base module.
+We have a [standard folder structure](./folder_structure.md) for projects in our working group.
+Understand this folder structure and create this basic structure in your project folder:
 
-#### 4. Create a repository
-On your computer, create a folder for this base module. In this folder, create the subfolders listed in the following table.
+```
+.
+├── code                    ← all script and notebook files
+├── data                    ← raw and intermediate data
+├── documents               ← abstracts, papers, posters, grant proposals, talks, ...
+├── results                 ← intermediate and final results of your analyses
+└── README.md               ← high level documentation, links to analyses and summary of results
+```
 
-| Folder | Explanation |
-| -------- | -------- |
-| data     | Your data is stored here     |
-| code     | Your code is stored here     |
-| communication     | Any images/posters etc. that can be used for publications and such are stored here     |
-| results     | Your results are stored here. This includes your results and end results     |
+#### 4. Start using git on your project
+Version control of your directory and your code is possible with the help of git. VS Code has built-in version control and its functionality is explained in this [guide](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git). However, before version control with git is possible, it must first be installed if you are using Windows. Click [here](https://git-scm.com/downloads) to go to the git download page.
 
 This repository will be synchronized with a remote repository (e.g. on GitHub), later on.
 
-#### 5. Start using git on your project
-Version control of your directory and your code is possible with the help of git. VS Code has built-in version control and its functionality is explained in this [guide](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git). However, before version control with git is possible, it must first be installed if you are using Windows. Click [here](https://git-scm.com/downloads) to go to the git download page.
-
-#### 6. Create a README
+#### 5. Create a README
 Create a fille called README.md or README.txt for your project and write a short introduction. This README is used to explain what you're doing so others can understand your repository and approach to the tasks.
 
-#### 7. Download the data provided by this [realistic dataset](https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BSST700)
+#### 6. Download the data provided by this [realistic dataset](https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BSST700)
 The dataset consists of 171 selected tiles from the right hemisphere of a mouse brain. Each tile has the dimensions 1000x1000 pixels and contains 6 imaging channels (nuclei channel, anchor channel and 4 coding channels) in which different markers were used. For each tile 4 sequencing rounds were performed.
 
 To download all of the files, you have to manually download each file on its own if you use Windows. On Linux you can download all files together using FTP. The dataset consists of the following files:
@@ -93,16 +94,16 @@ To download all of the files, you have to manually download each file on its own
 
 The files can then be unpacked. This should be done for the selected tiles in particular.
 
-#### 8. Use ```.gitignore``` on the downloaded data to prevent it from being committed to git
+#### 7. Use ```.gitignore``` on the downloaded data to prevent it from being committed to git
 Create a file called ```.gitignore``` and input the names/paths of files and/or folders that should not be included in the git commit. This ```.gitignore``` file has to be in your repository.
 
-#### 9. Update your README with details about the data
+#### 8. Update your README with details about the data
 Like mentioned in *6. Create a README* you should explain everything so others can understand it. Include information about your data. What is the data? What files are used? What does the data mean? and so on.
 
-#### 10. Inspect the data visually
+#### 9. Inspect the data visually
 Now that you handled most of the organizational stuff of this base module you can finally have a look at the downloaded data. Use some image files and have a look at them in a standard image viewer on your Computer.
 
-#### 11. Install Mamba
+#### 10. Install Mamba
 To start using python to analyse and visualize the data, you must first install Mamba. Mamba is a package manager that enables easy installation and handling of needed packages. Use this [link](https://github.com/conda-forge/miniforge?tab=readme-ov-file#miniforge3) to install Miniforge3 (Mamba).
 
 > [!WARNING]
@@ -110,7 +111,7 @@ To start using python to analyse and visualize the data, you must first install 
 Finalize the mamba installation by choosing "Git Bash" as your default terminal profile in VS Code and running `mamba init bash` in a Git Bash.
 After that, open a new Git Bash terminal and you are ready to use mamba.
 
-#### 12. Create the project environment and install the required packages. 
+#### 11. Create the project environment and install the required packages. 
 Once Miniforge3 (Mamba) is installed you have to create a project environment. Create a `environment.yml` file first with the content below as reference.
 
 ```yml
@@ -126,6 +127,9 @@ With the command ```mamba env create -f environment.yml --name NAME``` (```NAME`
 > Don't forget the workflow mentioned at the top of the base module!
 
 ---
+
+#### 12. Install the VS Code Extension "Jupyter" for Jupyter Notebook support
+The use of the Jupyter extension in VS Code combines the versatility of both "VS Code" and "Jupyter Notebook". 
 
 #### 13. Create a figure that incorporates all runs (c1 - c4) of one tile as subplots.
 Create two files: ```Analysis.ipynb``` and ```Functions.py```. When creating the ```.ipynb``` file in VS Code it wants you to select a kernel. Here you choose the environment you created in the previous task. The ```.ipynb``` file is where you write your code. Write your code as a function that can be used to analyse any given tile of the data. You can then save the function in the ```.py``` file so that you can also use it in other ```.ipynb``` files.
