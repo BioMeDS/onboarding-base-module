@@ -3,8 +3,8 @@
 ![undraw_setup_wizard_re_nday](https://github.com/BioMeDS/onboarding-base-module/assets/7403236/6df4da84-8292-43e1-a0f6-ed1b148d1308)
 
 
-> [!CAUTION]  
-> This onboarding base module is still a work in progress, so if you notice any errors or have any suggestions, please report them [here](https://github.com/BioMeDS/onboarding-base-module/issues) via a Github issue ([Guide](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue)).
+> [!NOTE]
+> We want to continuously improve this onboarding base module, so if you notice any errors or have any suggestions, please report them [here](https://github.com/BioMeDS/onboarding-base-module/issues) via a Github issue ([Guide](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue)).
 
 In bioinformatic projects, beside the work on the subject, a certain organization and structure is important in order to make sure that the work is correct, reproducible, and reusable. This onboarding material guides you through a realistic project (also see the [short project description](./project_description.md)). You will analyse an in-situ sequencing dataset using the python programming language, while using tools that help you follow these basic principles:
 
