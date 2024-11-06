@@ -107,8 +107,9 @@ To download all the files, you have to manually download each file on its own if
 
 The files can then be unpacked. This should be done for the selected tiles in particular.
 
-#### 7. Use ```.gitignore``` on the downloaded data to prevent it from being committed to git
-Create a file called ```.gitignore``` and input the names/paths of files and/or folders that should not be included in the git commit. This ```.gitignore``` file has to be in your repository.
+#### 7. Use `.gitignore` on the downloaded data to prevent it from being committed to git
+Create a text file in your repository called `.gitignore`.
+In that file list names/paths of files and folders that should not be tracked by git (one per line).
 
 #### 8. Update your README with details about the data
 Like mentioned in *6. Create a README* you should explain everything so others can understand it. Include information about your data. What is the data? What files are used? What does the data mean? and so on.
