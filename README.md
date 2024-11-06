@@ -145,7 +145,13 @@ With the command ```mamba env create -f environment.yml --name NAME``` (```NAME`
 The use of the Jupyter extension in VS Code combines the versatility of both "VS Code" and "Jupyter Notebook". 
 
 #### 13. Create a figure that incorporates all runs (c1 - c4) of one tile as subplots.
-Create two files: ```Analysis.ipynb``` and ```Functions.py```. When creating the ```.ipynb``` file in VS Code it wants you to select a kernel. Here you choose the environment you created in the previous task. The ```.ipynb``` file is where you write your code. Write your code as a function that can be used to analyse any given tile of the data. You can then save the function in the ```.py``` file so that you can also use it in other ```.ipynb``` files.
+Create two files: `Analysis.ipynb` and `Functions.py`.
+When creating the `.ipynb` file in VS Code it wants you to select a kernel.
+Here you choose the environment you created in the previous task.
+Start by writing your code in the `.ipynb` file.
+When your code works to analyse a specific tile of the data,
+extract your code into a function that can be used to analyse any given tile.
+Save this function in the `.py` file so that you can use it in any `.ipynb` files with `import`.
 
 As this task is about image analysis, you can read more about that [here](https://haesleinhuepf.github.io/BioImageAnalysisNotebooks/intro.html).
 
