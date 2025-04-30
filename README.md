@@ -41,6 +41,8 @@ The final goal of the analysis is to determine the spatial localization of trans
 For this purpose, a published in-situ sequencing (ISS) dataset is used, that utilizes barcodes with four rounds of sequencing.
 This dataset has been used to develop a method for ISS barcode decoding, called [PoSTcode](https://www.biorxiv.org/content/10.1101/2021.10.12.464086v1.full).
 
+>  *PoSTcode: Probabilistic image-based spatial transcriptomics decoder.* Gataric et al. bioRxiv 2021.10.12.464086; doi: https://doi.org/10.1101/2021.10.12.464086 
+
 ### Tasks
 
 #### 1. Read through the steps of the base module and understand your tasks
