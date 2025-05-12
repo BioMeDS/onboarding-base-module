@@ -90,6 +90,13 @@ The setting `user.name` is not an username for any system or website, it is simp
 This repository will be synchronized with a remote repository (e.g. on [GitHub](https://github.com)), later on.
 Generally, `git` is a program for version control on your computer and completely independent of the website GitHub, which allows hosting and sharing of git repositories.
 
+> [!TIP]
+> Each git commit is accompanied by a message, briefly explaining what happened in this step.
+It can be hard to come up with a short description, but good commit messages help understanding and navigating a project.
+Committing often (after each meaningful step) makes it easier to describe what you have done.
+It is also important to stick to a consistent style (e.g. capitalized message, imperative voice).
+More advice is given in [this guide](https://cbea.ms/git-commit/).
+
 #### 5. Create a README
 Create a fille called README.md or README.txt for your project and write a short introduction. This README is used to explain what you're doing so others can understand your repository and approach to the tasks.
 
