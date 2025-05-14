@@ -163,7 +163,9 @@ When your code works to analyse a specific tile of the data,
 extract your code into a function that can be used to analyse any given tile.
 Save this function in the `.py` file so that you can use it in any `.ipynb` files with `import`.
 
-As this task is about image analysis, you can read more about that [here](https://haesleinhuepf.github.io/BioImageAnalysisNotebooks/intro.html).
+As this task is about image analysis, you can read more about that in these online books:
+- [Introduction to Bioimage Analysis](https://bioimagebook.github.io/index.html)
+- [Bio-image Analysis Notebooks](https://haesleinhuepf.github.io/BioImageAnalysisNotebooks/intro.html).
 
 ##### 13.1. Plot one image
 Plot the following file using matplotlib.pyplot: ```out_opt_flow_registered_X10_Y10_c01_DAPI.tif```
