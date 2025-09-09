@@ -12,7 +12,7 @@ In bioinformatic projects, beside the work on the subject, a certain organizatio
 - Documentation of your work (README files and literate programming ([jupyter](https://jupyter.org/)))
 - Keeping track of your work with version control ([git](https://git-scm.com/))
 - Using an **I**ntegrated **D**evelopment **E**nvironment (IDE, [Visual Studio Code](https://code.visualstudio.com/))
-- Creating project specific code environments ([mamba](https://mamba.readthedocs.io/en/latest/))
+- Creating project specific code environments ([uv](https://docs.astral.sh/uv/))
 
 The general workflow consists of alternating steps of work on the project (mostly writing and executing code) and documentation.
 After each logical step, the progress is committed to version control.
@@ -98,7 +98,7 @@ It is also important to stick to a consistent style (e.g. capitalized message, i
 More advice is given in [this guide](https://cbea.ms/git-commit/).
 
 #### 5. Create a README
-Create a fille called README.md or README.txt for your project and write a short introduction. This README is used to explain what you're doing so others can understand your repository and approach to the tasks.
+Create a file called README.md for your project and write a short introduction. This README is used to explain what you're doing so others can understand your repository and approach to the tasks.
 
 #### 6. Download the data provided by this [realistic dataset](https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BSST700)
 The dataset consists of 171 selected tiles from the right hemisphere of a mouse brain. Each tile has the dimensions 1000x1000 pixels and contains 6 imaging channels (nuclei channel, anchor channel and 4 coding channels) in which different markers were used. For each tile 4 sequencing rounds were performed.
@@ -126,28 +126,30 @@ Like mentioned in *6. Create a README* you should explain everything so others c
 #### 9. Inspect the data visually
 Now that you handled most of the organizational stuff of this base module you can finally have a look at the downloaded data. Use some image files and have a look at them in a standard image viewer on your Computer.
 
-#### 10. Install Mamba
-To start using python to analyse and visualize the data, you must first install Mamba. Mamba is a package manager that enables easy installation and handling of needed packages. Use this [link](https://github.com/conda-forge/miniforge?tab=readme-ov-file#miniforge3) to install Miniforge3 (Mamba).
-
-> [!WARNING]
-> If you are on Windows, make sure, to check all boxes in the "Advanced Installation Options", particularly the option "Add Miniforge3 to PATH environment variable" (even though it is listed as not recommended, see https://github.com/BioMeDS/onboarding-base-module/issues/12).
-Finalize the mamba installation by choosing "Git Bash" as your default terminal profile in VS Code and running `mamba init bash` in a Git Bash.
-After that, open a new Git Bash terminal and you are ready to use mamba.
+#### 10. Install uv
+To start using python to analyse and visualize the data, you must first install `uv`. `uv` is a package manager that enables easy installation and handling of needed packages. Use this [link](https://docs.astral.sh/uv/getting-started/installation/) to install `uv`.
 
 #### 11. Create the project environment and install the required packages. 
-Once Miniforge3 (Mamba) is installed you have to create a project environment. Create a `environment.yml` file first with the content below as reference.
+Once `uv` is installed you have to initialize the project environment. Within your project folder run
 
-```yml
-dependencies:
-  - numpy
-  - pandas=2.0.1
+```bash
+uv init
 ```
-For this base module you need the latest version of python as well as the packages ```matplotlib```, ```scikit-image``` and ```ipykernel```.
 
-With the command ```mamba env create -f environment.yml --name NAME``` (```NAME``` = How you want to call your environment) you can create your new mamba environment based on your .yml file. If you want to install each package individually, this works with the command ```mamba install PACKAGE``` (```PACKAGE``` = The name of the package). You can also install several packages at once by including them all in the ```mamba install``` command (separated by spaces). For example: ```mamba install numpy pandas=2.0.1```. With the command ```mamba remove PACKAGE``` packages can be removed.
+This will create a `pyproject.toml` file containing information related to python packages and your own python project code.
+Additionally the file `.python-version` (the python version used for this project) `main.py` (a small sample file, you can safely delete it)
+
+Now you can install python packages into a project specific environment using `uv add packagename`, e.g.:
+
+```bash
+uv add numpy
+```
+
+For this base module you need the following packages ```matplotlib```, ```scikit-image``` and ```ipykernel```.
 
 > [!NOTE]
 > Don't forget the workflow mentioned at the top of the base module!
+> Make frequent git commits with meaningful commit messages.
 
 ---
 
