@@ -33,7 +33,7 @@ If you want to learn or refresh the basics, check out these resources (you don't
 - [Introduction to Programming with Python](https://cs50.harvard.edu/python/2022/)
 
 > [!TIP]
-> If you encounter problems and cannot find any help on the linked pages, try to google your problem or look at sites such as [Stackoverflow](https://stackoverflow.com/) or [Reddit](https://www.reddit.com/). You can also try asking [ChatGPT](chat.openai.com), although the quality of the results might vary. If you still have trouble finding a solution to your problem or if you don't understand the solution you found ask your supervisor.
+> If you encounter problems and cannot find any help on the linked pages, try to search for your problem or look at sites such as [Stackoverflow](https://stackoverflow.com/). Please do not use large language models like ChatGPT and coding assistants like GitHub Copilot for this module, as they [*eliminate productive struggle*](https://doi.org/10.1007/s00146-025-02323-9). If you still have trouble finding a solution to your problem or if you don't understand the solution you found, ask your supervisor.
 
 ### Biological background
 
