@@ -33,7 +33,13 @@ If you want to learn or refresh the basics, check out these resources (you don't
 - [Introduction to Programming with Python](https://cs50.harvard.edu/python/2022/)
 
 > [!TIP]
-> If you encounter problems and cannot find any help on the linked pages, try to search for your problem or look at sites such as [Stackoverflow](https://stackoverflow.com/). Please do not use large language models like ChatGPT and coding assistants like GitHub Copilot for this module, as they [*eliminate productive struggle*](https://doi.org/10.1007/s00146-025-02323-9). If you still have trouble finding a solution to your problem or if you don't understand the solution you found, ask your supervisor.
+> If you encounter problems and cannot find any help on the linked pages, try to search for your problem or look at sites such as [Stackoverflow](https://stackoverflow.com/).
+> If you still have trouble finding a solution to your problem or if you don't understand the solution you found, ask your supervisor.
+
+> [!WARNING]
+> Please do not use large language models like ChatGPT and coding assistants like GitHub Copilot for this module, as they [*eliminate productive struggle*](https://doi.org/10.1007/s00146-025-02323-9).
+> The main aim of this module is to learn the fundamentals of bioinformatic data analysis, project management workflow, and programming.
+> It is **not** the goal to get through this material as quickly as possible, but to thoroughly learn.
 
 ### Biological background
 
