@@ -44,7 +44,7 @@ If you want to learn or refresh the basics, check out these resources (you don't
 ### Biological background
 
 The final goal of the analysis is to determine the spatial localization of transcripts from 50 genes within the mouse brain. 
-For this purpose, a published in-situ sequencing (ISS) dataset is used, that utilizes barcodes with four rounds of sequencing.
+For this purpose, a published in-situ sequencing (ISS) dataset is used, which utilizes barcodes with four rounds of sequencing.
 This dataset has been used to develop a method for ISS barcode decoding, called [PoSTcode](https://www.biorxiv.org/content/10.1101/2021.10.12.464086v1.full).
 
 >  *PoSTcode: Probabilistic image-based spatial transcriptomics decoder.* Gataric et al. bioRxiv 2021.10.12.464086; doi: https://doi.org/10.1101/2021.10.12.464086 
@@ -81,8 +81,8 @@ Understand this folder structure and create this basic structure in your project
 #### 4. Start using git on your project
 
 Version control of your directory and your code is possible with the help of git.
-To learn more about what git is and what it can do for you, see [the Software Carpentry lesson on version control]().
-A short summary of the most important features of git is given in [the Simple Guide to Git]().
+To learn more about what git is and what it can do for you, see [the Software Carpentry lesson on version control](https://swcarpentry.github.io/git-novice/).
+A short summary of the most important features of git is given in [the Simple Guide to Git](https://rogerdudler.github.io/git-guide/).
 VS Code has built-in version control and its functionality is explained in this [guide](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git).
 However, before version control with git is possible, it must first be installed if you are using Windows.
 Click [here](https://git-scm.com/downloads) to go to the git download page.
