@@ -19,6 +19,7 @@ Here, we provide some guidelines to write your protocol, because bioinformatics 
   - only be included in the main text, if it contains an essential innovation (e.g. an algorithm you developed, or the high-level steps of the analysis pipeline you designed)
   - other code can be shown in the appendix (if you specifically reference some of it) 
   - irrespective of the amount of code included in the document, a git repository with all the code should additionally be provided
+  - if you write in latex, use an [appropriate environment](https://www.overleaf.com/learn/latex/Code_listing), there are similar extensions for Word.
 - you can use any text processing software, you like. If you use $\LaTeX$, you might want to use [this template](https://www.overleaf.com/latex/templates/cctb-report-template/kpjgqsnwkqjy)
 
 ## Specific hints
