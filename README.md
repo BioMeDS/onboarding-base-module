@@ -109,7 +109,8 @@ Create a file called README.md for your project and write a short introduction. 
 #### 6. Download the data provided by this [realistic dataset](https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BSST700)
 The dataset consists of 171 selected tiles from the right hemisphere of a mouse brain. Each tile has the dimensions 1000x1000 pixels and contains 6 imaging channels (nuclei channel, anchor channel and 4 coding channels) in which different markers were used. For each tile 4 sequencing rounds were performed.
 
-To download all the files, you have to manually download each file on its own if you use Windows. On Linux you can download all files together using FTP. The dataset consists of the following files:
+> [!WARNING]
+> Downloading all files at once using the "Download all files" button and then selecting "Download as a ZIP file" does not work. You can download files individually by clicking their filename.
 
 | File | Explanation |
 | ---- | ----------- |
