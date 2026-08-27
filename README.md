@@ -229,6 +229,12 @@ Write a jupyter notebook to explore a single field of view.
 - How can you devide the nuclei into separate instances?
 - Which problems occur, how can they be addressed?
 
+> [!TIP]
+> Before jumping into the programmatic analysis, it is usually a good idea to manually and interactively explore the data.
+> Use [Fiji/ImageJ](https://imagej.net/software/fiji/) or [napari](https://napari.org/) to look at some images.
+> This gives you a sense of how challenging the task is and what kinds of problems might arise.
+> It also helps to determine a plausible size range for nuclei.
+
 Beside the nucleus count, also create a diagnostic figure, that helps a human to see, whether your method worked or failed.
 When you have a method that works well on your selected fov, try it on some other fovs
 
