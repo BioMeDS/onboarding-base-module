@@ -1,5 +1,8 @@
 # Onboarding - base module
 
+> [!CAUTION]
+> This project moved to [Codeberg](https://codeberg.org/BioMeDS/onboarding-base-module). The version here is probably outdated.
+
 ![undraw_setup_wizard_re_nday](https://github.com/BioMeDS/onboarding-base-module/assets/7403236/6df4da84-8292-43e1-a0f6-ed1b148d1308)
 
 
